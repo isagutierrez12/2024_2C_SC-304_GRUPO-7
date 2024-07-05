@@ -10,17 +10,17 @@ Integrantes:
 
 2. Fases del proyecto  
     1. Análisis y diseño  
-    * **Requisitos funcionales:** detalle y valide todos los requisitos funcionales y funciones faltantes del sistema.  
-    * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.
+            * **Requisitos funcionales:** detalle y valide todos los requisitos funcionales y funciones faltantes del sistema.  
+            * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.
     2. Implementación  
-    * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
-    * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
+            * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
+            * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
     3. Integración y pruebas  
-    * **Integración de componentes:** Unidad formada por varios módulos y componentes del sistema.  
-    * **Pruebas del sistema:** realice pruebas de integración y del sistema para verificar la funcionalidad global y la interoperabilidad de los módulos.  
+            * **Integración de componentes:** Unidad formada por varios módulos y componentes del sistema.  
+            * **Pruebas del sistema:** realice pruebas de integración y del sistema para verificar la funcionalidad global y la interoperabilidad de los módulos.  
     4. Despliegue y Entrega  
-    * **Requisitos del sistema:** Prepare la aplicación para eliminarla en un trabajo de producción.  
-    * **Contenido y Capacidad:** Ingresar la aplicación al cliente, crear documentación y capacidad para usuarios finales y administradores.
+            * **Requisitos del sistema:** Prepare la aplicación para eliminarla en un trabajo de producción.  
+            * **Contenido y Capacidad:** Ingresar la aplicación al cliente, crear documentación y capacidad para usuarios finales y administradores.
 
 3. Recursos Necesarios  
 * **Recursos Humanos:** desarrolladores, testers y equipos de soporte técnico.  
