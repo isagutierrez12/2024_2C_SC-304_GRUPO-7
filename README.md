@@ -9,16 +9,16 @@ Integrantes:
 * **Actividades:** Incluye funciones de registro, actualizaciones y asesoramiento sobre eventos, participantes, programa de participantes, resultados y clasificación de equipos.  
 
 2. Fases del proyecto  
-  2.1. Análisis y diseño  
+  1. Análisis y diseño  
     * **Requisitos funcionales:** detalle y valide todos los requisitos funcionales y funciones faltantes del sistema.  
     * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.  
-  2.2. Implementación  
+  2. Implementación  
     * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
     * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
-  2.3. Integración y pruebas  
+  3. Integración y pruebas  
     * **Integración de componentes:** Unidad formada por varios módulos y componentes del sistema.  
     * **Pruebas del sistema:** realice pruebas de integración y del sistema para verificar la funcionalidad global y la interoperabilidad de los módulos.  
-  2.4. Despliegue y Entrega  
+  4. Despliegue y Entrega  
     * **Requisitos del sistema:** Prepare la aplicación para eliminarla en un trabajo de producción.  
     * **Contenido y Capacidad:** Ingresar la aplicación al cliente, crear documentación y capacidad para usuarios finales y administradores.
 
