@@ -1,7 +1,7 @@
 # 2024_2C_SC-304_GRUPO-7
-
-Integrantes:
-Isabel Rebeca Gutiérrez Hidalgo
+Integrantes:  
+*Isabel Rebeca Gutiérrez Hidalgo  
+*Diego Andrés Ramírez Bolaños  
 
 # Menú principal
 El menú principal va a mostrar la interfaz de selección de tipo de usuario, llámense Administrador y Espectador. Una vez seleccionado el usuario se muestra una nueva interfaz dependiendo de la selección con el nuevo submenú, como se muestra a continuación:
@@ -37,5 +37,11 @@ Por otro lado, el menú para Espectador solamente va a mostrar las opciones fina
 4. Grafo de equipos  
 5. Árbol de clasificación  
 
-# Librerías a utilizar:
+# Librerías a utilizar
 * JOptionPane  
+
+# Componentes visuales a utilizar
+* JFrame Forms; para los menús.  
+* Imagenes png: para los menús. Ubicadas en el archivo img en Source Packages.  
+* InputDialog de JOptionPane: para insertar datos durante la corrida del código.  
+* MessageDialog de JOptionPane: para mostrar datos resultantes del código en cada opción del menú.  
