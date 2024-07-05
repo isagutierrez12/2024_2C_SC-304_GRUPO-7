@@ -26,21 +26,122 @@ public class MenuAdministrador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnGestionParticipantes = new javax.swing.JButton();
+        btnProgramacionEventos = new javax.swing.JButton();
+        btnResultadosPartidos = new javax.swing.JButton();
+        btnConsultas = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        btnGestionEventos = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menú Administrador");
+
+        btnGestionParticipantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/005-tarjeta-de-identificacion.png"))); // NOI18N
+        btnGestionParticipantes.setText("Gestión de Participantes");
+        btnGestionParticipantes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGestionParticipantesActionPerformed(evt);
+            }
+        });
+
+        btnProgramacionEventos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/008-calendario-2.png"))); // NOI18N
+        btnProgramacionEventos.setText("Programación de Eventos");
+        btnProgramacionEventos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProgramacionEventosActionPerformed(evt);
+            }
+        });
+
+        btnResultadosPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/003-lider.png"))); // NOI18N
+        btnResultadosPartidos.setText("Resultados de Partidos");
+        btnResultadosPartidos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResultadosPartidosActionPerformed(evt);
+            }
+        });
+
+        btnConsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/lupa.png"))); // NOI18N
+        btnConsultas.setText("Consultas");
+        btnConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultasActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/018-pelotas.png"))); // NOI18N
+        jLabel2.setText("     Seleccione la opción que desea realizar");
+
+        btnGestionEventos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/009-calendario-1.png"))); // NOI18N
+        btnGestionEventos.setText("Gestión de Eventos");
+        btnGestionEventos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGestionEventosActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(btnResultadosPartidos)
+                        .addGap(67, 67, 67)
+                        .addComponent(btnConsultas))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnGestionEventos, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnGestionParticipantes)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnProgramacionEventos)))
+                .addGap(18, 18, 18))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(196, 196, 196)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnProgramacionEventos)
+                    .addComponent(btnGestionParticipantes)
+                    .addComponent(btnGestionEventos))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnResultadosPartidos)
+                    .addComponent(btnConsultas))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGestionEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionEventosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGestionEventosActionPerformed
+
+    private void btnGestionParticipantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionParticipantesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGestionParticipantesActionPerformed
+
+    private void btnProgramacionEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProgramacionEventosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProgramacionEventosActionPerformed
+
+    private void btnResultadosPartidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadosPartidosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnResultadosPartidosActionPerformed
+
+    private void btnConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnConsultasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +179,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConsultas;
+    private javax.swing.JButton btnGestionEventos;
+    private javax.swing.JButton btnGestionParticipantes;
+    private javax.swing.JButton btnProgramacionEventos;
+    private javax.swing.JButton btnResultadosPartidos;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

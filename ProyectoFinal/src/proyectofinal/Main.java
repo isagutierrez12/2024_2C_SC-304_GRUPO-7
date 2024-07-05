@@ -15,6 +15,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MenuPrincipal m = new MenuPrincipal();
+        m.setVisible(true); //mostrar el frame
+        m.setLocationRelativeTo(null); //colocar la ventana en el centro de la pantalla
     }
     
 }

@@ -26,21 +26,122 @@ public class MenuEspectador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel2 = new javax.swing.JLabel();
+        btnParticipantes = new javax.swing.JButton();
+        btnEventos = new javax.swing.JButton();
+        btnResultados = new javax.swing.JButton();
+        btnGrafo = new javax.swing.JButton();
+        btnArbol = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Menú Espectador");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/018-pelotas.png"))); // NOI18N
+        jLabel2.setText("     Seleccione la opción que desea realizar");
+
+        btnParticipantes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/005-tarjeta-de-identificacion.png"))); // NOI18N
+        btnParticipantes.setText("Consulta de Participantes");
+        btnParticipantes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnParticipantesActionPerformed(evt);
+            }
+        });
+
+        btnEventos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/004-calendario.png"))); // NOI18N
+        btnEventos.setText("Consulta de Eventos");
+        btnEventos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEventosActionPerformed(evt);
+            }
+        });
+
+        btnResultados.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/003-lider.png"))); // NOI18N
+        btnResultados.setText("Consulta de Resultados");
+        btnResultados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResultadosActionPerformed(evt);
+            }
+        });
+
+        btnGrafo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/002-equipo.png"))); // NOI18N
+        btnGrafo.setText("Grafo de equipos");
+        btnGrafo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGrafoActionPerformed(evt);
+            }
+        });
+
+        btnArbol.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/001-juego-de-azar.png"))); // NOI18N
+        btnArbol.setText("Árbol de clasificación");
+        btnArbol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnArbolActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnParticipantes, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnEventos)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnResultados))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(btnGrafo)
+                        .addGap(73, 73, 73)
+                        .addComponent(btnArbol))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(jLabel2)
+                        .addGap(183, 183, 183)))
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addComponent(jLabel2)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnResultados)
+                    .addComponent(btnEventos)
+                    .addComponent(btnParticipantes))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnGrafo)
+                    .addComponent(btnArbol))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnParticipantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnParticipantesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnParticipantesActionPerformed
+
+    private void btnEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEventosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEventosActionPerformed
+
+    private void btnResultadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnResultadosActionPerformed
+
+    private void btnGrafoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGrafoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGrafoActionPerformed
+
+    private void btnArbolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArbolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnArbolActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +179,11 @@ public class MenuEspectador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnArbol;
+    private javax.swing.JButton btnEventos;
+    private javax.swing.JButton btnGrafo;
+    private javax.swing.JButton btnParticipantes;
+    private javax.swing.JButton btnResultados;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
