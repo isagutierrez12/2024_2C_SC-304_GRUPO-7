@@ -17,7 +17,7 @@ Integrantes:
   * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
   * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
 
-  2.3. Integración y pruebas  
+   2.3. Integración y pruebas  
   * **Integración de componentes:** Unidad formada por varios módulos y componentes del sistema.  
   * **Pruebas del sistema:** realice pruebas de integración y del sistema para verificar la funcionalidad global y la interoperabilidad de los módulos.  
 
