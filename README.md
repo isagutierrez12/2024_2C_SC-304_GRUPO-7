@@ -6,7 +6,7 @@ Integrantes:
 ## Menú principal
 El menú principal va a mostrar la interfaz de selección de tipo de usuario, llámense Administrador y Espectador. Una vez seleccionado el usuario se muestra una nueva interfaz dependiendo de la selección con el nuevo submenú, como se muestra a continuación:
 
-![Menú Principal del programa](/Imagenes/Menus/MenuPrincipal.png)
+![Menú Principal del programa](/Imagenes/Menus/MenuPrincipal1.png)
 
 ### Submenú Administrador
 En el caso del menú para Administrador se muestran las opciones de los siguientes requisitos funcionales, cada opción mostrará un nuevo submenú mostrando las opciones disponibles a seleccionar en cada requisito. Cada una de las opciones finales correrá el código necesario para cumplir los objetivos de dicha opción.
