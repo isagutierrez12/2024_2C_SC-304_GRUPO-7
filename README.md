@@ -11,7 +11,7 @@ Integrantes:
 2. Fases del proyecto  
   2.1. Análisis y diseño  
     * **Requisitos funcionales:** detalle y valide todos los requisitos funcionales y funciones faltantes del sistema.  
-    * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.
+    * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.  
   2.2. Implementación  
     * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
     * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
