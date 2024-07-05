@@ -3,10 +3,10 @@ Integrantes:
 *Isabel Rebeca Gutiérrez Hidalgo  
 *Diego Andrés Ramírez Bolaños  
 
-# Menú principal
+## Menú principal
 El menú principal va a mostrar la interfaz de selección de tipo de usuario, llámense Administrador y Espectador. Una vez seleccionado el usuario se muestra una nueva interfaz dependiendo de la selección con el nuevo submenú, como se muestra a continuación:
 
-## Submenú Administrador
+### Submenú Administrador
 En el caso del menú para Administrador se muestran las opciones de los siguientes requisitos funcionales, cada opción mostrará un nuevo submenú mostrando las opciones disponibles a seleccionar en cada requisito. Cada una de las opciones finales correrá el código necesario para cumplir los objetivos de dicha opción.
 1. Gestión de Eventos:  
    * Registrar Evento  
@@ -29,7 +29,7 @@ En el caso del menú para Administrador se muestran las opciones de los siguient
    * Grafo de equipos (muestra el grafo de la representación de la relación de enfrentamientos entre equipos)  
    * Árbol de clasificación (muestra el árbol binario que gestiona la clasificación de los equipos)  
 
-## Submenú Espectador
+### Submenú Espectador
 Por otro lado, el menú para Espectador solamente va a mostrar las opciones finales. Al igual que en el caso del menú para Administrador, cada opción final correrá el código necesario para cumplir el objetivo en cada opción.
 1. Consulta de Participantes  
 2. Consulta de Eventos (muestra la lista de eventos y sus detalles)  
@@ -37,10 +37,10 @@ Por otro lado, el menú para Espectador solamente va a mostrar las opciones fina
 4. Grafo de equipos  
 5. Árbol de clasificación  
 
-# Librerías a utilizar
+## Librerías a utilizar
 * JOptionPane  
 
-# Componentes visuales a utilizar
+## Componentes visuales a utilizar
 * JFrame Forms: para los menús.  
 * Imagenes png: para los menús. Ubicadas en el archivo img en Source Packages.  
 * InputDialog de JOptionPane: para insertar datos durante la corrida del código.  
