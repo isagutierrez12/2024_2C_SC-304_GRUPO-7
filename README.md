@@ -15,10 +15,10 @@ En el caso del menú para Administrador se muestran las opciones de los siguient
 
 1. Gestión de Eventos:  
    * Registrar Evento  
-   * Lista de Participantes  
    * Actualizar Evento  
    * Eliminar Evento  
-   * Lista de Eventos
+   * Lista de Eventos  
+   * Lista de Participantes  
 
 ![Menú de Gestión de Eventos para Administrador](/Imagenes/Menus/GestionEventos.png)
 
