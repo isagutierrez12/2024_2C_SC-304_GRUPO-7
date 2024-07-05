@@ -3,6 +3,44 @@ Integrantes:
 *Isabel Rebeca Gutiérrez Hidalgo  
 *Diego Andrés Ramírez Bolaños  
 
+Plan de Proyecto para el Sistema de Gestión de Eventos Deportivos 
+1. Definición de proyecto 
+Objetivo: Crear una aplicación para el registro de eventos deportivos, permitir a los 
+administradores, registrador de eventos, participantes, programas de participantes, 
+registrador de resultados y consulta de información relevante para los espectadores. 
+Actividades: Incluye funciones de registro, actualizaciones y asesoramiento sobre 
+eventos, participantes, programa de participantes, resultados y clasificación de equipos.
+
+2. Fases del proyecto
+
+2.1. Análisis y diseño 
+Requisitos funcionales: detalle y valide todos los requisitos funcionales y funciones 
+faltantes del sistema. 
+Diseño de arquitectura: Definir la arquitectura general del sistema, incluyendo la 
+estructura de datos y la interacción entre módulos. 
+
+2.2. implementación 
+Descripción funcional: Implementar las funciones básicas del sistema en el diseño 
+anterior. 
+Comprobaciones coherentes: realice comprobaciones coherentes para garantizar que 
+todos los componentes funcionen correctamente. 
+
+2.3. Integración y pruebas 
+Integración de componentes: Unidad formada por varios módulos y componentes del 
+sistema. 
+Pruebas del sistema: realice pruebas de integración y del sistema para verificar la 
+funcionalidad global y la interoperabilidad de los módulos. 
+
+2.4. Despliegue y Entrega 
+Requisitos del sistema: Prepare la aplicación para eliminarla en un trabajo de producción. 
+Contenido y Capacidad: Ingresar la aplicación al cliente, crear documentación y 
+capacidad para usuarios finales y administradores.
+
+3. Recursos Necesarios 
+Recursos Humanos: desarrolladores, testers y equipos de soporte técnico. 
+Recursos Tecnológicos: Entorno desarrollo, servidores para pruebas y producción, 
+software para manejo de bases de datos.
+
 ## Menú principal
 El menú principal va a mostrar la interfaz de selección de tipo de usuario, llámense Administrador y Espectador. Una vez seleccionado el usuario se muestra una nueva interfaz dependiendo de la selección con el nuevo submenú, como se muestra a continuación:
 
