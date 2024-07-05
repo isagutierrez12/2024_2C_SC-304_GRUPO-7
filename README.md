@@ -8,7 +8,7 @@ Integrantes:
 * **Objetivo:** Crear una aplicación para el registro de eventos deportivos, permitir a los administradores, registrador de eventos, participantes, programas de participantes, registrador de resultados y consulta de información relevante para los espectadores.  
 * **Actividades:** Incluye funciones de registro, actualizaciones y asesoramiento sobre eventos, participantes, programa de participantes, resultados y clasificación de equipos.  
 
-2. Fases del proyecto
+2. Fases del proyecto  
   2.1. Análisis y diseño  
   * **Requisitos funcionales:** detalle y valide todos los requisitos funcionales y funciones faltantes del sistema. 
   * **Diseño de arquitectura:** Definir la arquitectura general del sistema, incluyendo la estructura de datos y la interacción entre módulos.  
@@ -17,7 +17,7 @@ Integrantes:
   * **Descripción funcional:** Implementar las funciones básicas del sistema en el diseño anterior.  
   * **Comprobaciones coherentes:** realice comprobaciones coherentes para garantizar que todos los componentes funcionen correctamente.  
 
-   2.3. Integración y pruebas  
+  2.3. Integración y pruebas  
   * **Integración de componentes:** Unidad formada por varios módulos y componentes del sistema.  
   * **Pruebas del sistema:** realice pruebas de integración y del sistema para verificar la funcionalidad global y la interoperabilidad de los módulos.  
 
