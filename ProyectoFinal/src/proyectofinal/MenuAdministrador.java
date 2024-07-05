@@ -26,12 +26,29 @@ public class MenuAdministrador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnRegresar = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         btnGestionParticipantes = new javax.swing.JButton();
         btnProgramacionEventos = new javax.swing.JButton();
         btnResultadosPartidos = new javax.swing.JButton();
         btnConsultas = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         btnGestionEventos = new javax.swing.JButton();
+        btnRegresarA = new javax.swing.JButton();
+        btnSalir1 = new javax.swing.JButton();
+
+        btnRegresar.setForeground(new java.awt.Color(0, 255, 51));
+        btnRegresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/atras.png"))); // NOI18N
+        btnRegresar.setText("Regresar");
+
+        btnSalir.setForeground(new java.awt.Color(255, 0, 0));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/salida.png"))); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú Administrador");
@@ -79,6 +96,24 @@ public class MenuAdministrador extends javax.swing.JFrame {
             }
         });
 
+        btnRegresarA.setForeground(new java.awt.Color(0, 255, 51));
+        btnRegresarA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/atras.png"))); // NOI18N
+        btnRegresarA.setText("Regresar");
+        btnRegresarA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarAActionPerformed(evt);
+            }
+        });
+
+        btnSalir1.setForeground(new java.awt.Color(255, 0, 0));
+        btnSalir1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/salida.png"))); // NOI18N
+        btnSalir1.setText("Salir");
+        btnSalir1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalir1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,16 +122,22 @@ public class MenuAdministrador extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(btnResultadosPartidos)
-                        .addGap(67, 67, 67)
-                        .addComponent(btnConsultas))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(btnGestionEventos, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnGestionParticipantes)
                         .addGap(18, 18, 18)
-                        .addComponent(btnProgramacionEventos)))
+                        .addComponent(btnProgramacionEventos))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnSalir1)
+                                .addGap(73, 73, 73)
+                                .addComponent(btnRegresarA))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnResultadosPartidos)
+                                .addGap(67, 67, 67)
+                                .addComponent(btnConsultas)))))
                 .addGap(18, 18, 18))
             .addGroup(layout.createSequentialGroup()
                 .addGap(196, 196, 196)
@@ -117,7 +158,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnResultadosPartidos)
                     .addComponent(btnConsultas))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegresarA)
+                    .addComponent(btnSalir1))
+                .addGap(18, 18, 18))
         );
 
         pack();
@@ -125,23 +170,53 @@ public class MenuAdministrador extends javax.swing.JFrame {
 
     private void btnGestionEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionEventosActionPerformed
         // TODO add your handling code here:
+        GestionEventos ge = new GestionEventos();
+        ge.setVisible(true);
+        ge.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnGestionEventosActionPerformed
 
     private void btnGestionParticipantesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionParticipantesActionPerformed
         // TODO add your handling code here:
+        GestionParticipantes gp = new GestionParticipantes();
+        gp.setVisible(true);
+        gp.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnGestionParticipantesActionPerformed
 
     private void btnProgramacionEventosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProgramacionEventosActionPerformed
         // TODO add your handling code here:
+        ProgramacionEventos pe = new ProgramacionEventos();
+        pe.setVisible(true);
+        pe.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnProgramacionEventosActionPerformed
 
     private void btnResultadosPartidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultadosPartidosActionPerformed
         // TODO add your handling code here:
+        ResultadosPartidos rp = new ResultadosPartidos();
+        rp.setVisible(true);
+        rp.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnResultadosPartidosActionPerformed
 
     private void btnConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultasActionPerformed
         // TODO add your handling code here:
+        Consultas c = new Consultas();
+        c.setVisible(true);
+        c.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnConsultasActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnSalir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalir1ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnSalir1ActionPerformed
+
+    private void btnRegresarAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarAActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnRegresarAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +258,11 @@ public class MenuAdministrador extends javax.swing.JFrame {
     private javax.swing.JButton btnGestionEventos;
     private javax.swing.JButton btnGestionParticipantes;
     private javax.swing.JButton btnProgramacionEventos;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btnRegresarA;
     private javax.swing.JButton btnResultadosPartidos;
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnSalir1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

@@ -32,6 +32,8 @@ public class MenuEspectador extends javax.swing.JFrame {
         btnResultados = new javax.swing.JButton();
         btnGrafo = new javax.swing.JButton();
         btnArbol = new javax.swing.JButton();
+        btnRegresarE = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menú Espectador");
@@ -79,29 +81,52 @@ public class MenuEspectador extends javax.swing.JFrame {
             }
         });
 
+        btnRegresarE.setForeground(new java.awt.Color(0, 255, 51));
+        btnRegresarE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/atras.png"))); // NOI18N
+        btnRegresarE.setText("Regresar");
+        btnRegresarE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarEActionPerformed(evt);
+            }
+        });
+
+        btnSalir.setForeground(new java.awt.Color(255, 0, 0));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/salida.png"))); // NOI18N
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnParticipantes, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEventos)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnResultados))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(btnGrafo)
-                        .addGap(73, 73, 73)
-                        .addComponent(btnArbol))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
                         .addComponent(jLabel2)
-                        .addGap(183, 183, 183)))
-                .addGap(24, 24, 24))
+                        .addGap(207, 207, 207))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnParticipantes, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnEventos)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnResultados))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnGrafo)
+                                    .addComponent(btnSalir))
+                                .addGap(73, 73, 73)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnRegresarE)
+                                    .addComponent(btnArbol))))
+                        .addGap(24, 24, 24))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,7 +142,11 @@ public class MenuEspectador extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnGrafo)
                     .addComponent(btnArbol))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnRegresarE)
+                    .addComponent(btnSalir))
+                .addGap(13, 13, 13))
         );
 
         pack();
@@ -142,6 +171,16 @@ public class MenuEspectador extends javax.swing.JFrame {
     private void btnArbolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArbolActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnArbolActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnRegresarEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarEActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+    }//GEN-LAST:event_btnRegresarEActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,7 +222,9 @@ public class MenuEspectador extends javax.swing.JFrame {
     private javax.swing.JButton btnEventos;
     private javax.swing.JButton btnGrafo;
     private javax.swing.JButton btnParticipantes;
+    private javax.swing.JButton btnRegresarE;
     private javax.swing.JButton btnResultados;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
