@@ -62,7 +62,7 @@ public class ProgramacionEventos extends javax.swing.JFrame {
         });
 
         btnCalendarioPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/008-calendario-2.png"))); // NOI18N
-        btnCalendarioPartidos.setText("Calendario Partidos");
+        btnCalendarioPartidos.setText("Calendario de Partidos");
         btnCalendarioPartidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCalendarioPartidosActionPerformed(evt);
@@ -90,7 +90,7 @@ public class ProgramacionEventos extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(81, 81, 81)
                         .addComponent(jLabel2)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
