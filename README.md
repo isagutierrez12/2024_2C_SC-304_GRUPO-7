@@ -33,7 +33,7 @@ En el caso del menú para Administrador se muestran las opciones de los siguient
    * Programar Partidos  
    * Calendario de Partidos
 
-![Menú de Programación de Eventos para Administrador](/Imagenes/Menus/ProgramacionEventos.png)
+![Menú de Programación de Eventos para Administrador](/Imagenes/Menus/ProgramacionEventos1.png)
      
 4. Resultados de Partidos  
    * Registrar Resultado  
