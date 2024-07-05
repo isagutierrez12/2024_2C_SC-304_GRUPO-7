@@ -41,7 +41,7 @@ Por otro lado, el menú para Espectador solamente va a mostrar las opciones fina
 * JOptionPane  
 
 # Componentes visuales a utilizar
-* JFrame Forms; para los menús.  
+* JFrame Forms: para los menús.  
 * Imagenes png: para los menús. Ubicadas en el archivo img en Source Packages.  
 * InputDialog de JOptionPane: para insertar datos durante la corrida del código.  
 * MessageDialog de JOptionPane: para mostrar datos resultantes del código en cada opción del menú.  
