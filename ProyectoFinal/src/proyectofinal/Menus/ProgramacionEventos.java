@@ -53,7 +53,7 @@ public class ProgramacionEventos extends javax.swing.JFrame {
             }
         });
 
-        btnProgramarPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/003-lider.png"))); // NOI18N
+        btnProgramarPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/009-calendario-1.png"))); // NOI18N
         btnProgramarPartidos.setText("Programar Partidos");
         btnProgramarPartidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +61,7 @@ public class ProgramacionEventos extends javax.swing.JFrame {
             }
         });
 
-        btnCalendarioPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/lupa.png"))); // NOI18N
+        btnCalendarioPartidos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/png/008-calendario-2.png"))); // NOI18N
         btnCalendarioPartidos.setText("Calendario Partidos");
         btnCalendarioPartidos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
