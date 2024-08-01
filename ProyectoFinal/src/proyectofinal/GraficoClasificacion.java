@@ -52,7 +52,7 @@ public class GraficoClasificacion extends JPanel {
             g2d.setColor(Color.BLACK);
             g2d.draw(barra); // Borde de la barra
 
-            // Dibujar las etiquetas de los equipos
+            // Ajustar el espacio para etiquetas de los equipos
             String etiqueta = equipos[i];
             FontMetrics fm = g2d.getFontMetrics();
             int etiquetaX = x + (anchoBarra / 2) - fm.stringWidth(etiqueta) / 2;
@@ -60,27 +60,16 @@ public class GraficoClasificacion extends JPanel {
             g2d.drawString(etiqueta, etiquetaX, etiquetaY);
         }
 
-        // Configurar fuente para ejes
-        g2d.setFont(new Font("SansSerif", Font.PLAIN, 12));
-        
         // Dibujar el eje Y
         g2d.drawLine(margenIzquierda, margenSuperior, margenIzquierda, alto - margenInferior);
         // Dibujar el eje X
         g2d.drawLine(margenIzquierda, alto - margenInferior, ancho - margenDerecha, alto - margenInferior);
-        
+
         // Dibujar etiquetas del eje Y
         g2d.setColor(Color.BLACK);
         for (int i = 0; i <= maxPuntos; i += 1) {
             int y = alto - margenInferior - (i * (alto - margenSuperior - margenInferior)) / maxPuntos;
             g2d.drawString(String.valueOf(i), margenIzquierda - 40, y + 5);
-        }
-
-        // Dibujar etiquetas del eje X
-        FontMetrics fm = g2d.getFontMetrics();
-        for (int i = 0; i < puntos.length; i++) {
-            int x = margenIzquierda + i * (anchoBarra + espacioEntreBarras) + (anchoBarra / 2);
-            int y = alto - margenInferior + 30;
-            g2d.drawString(equipos[i], x - fm.stringWidth(equipos[i]) / 2, y);
         }
     }
 
