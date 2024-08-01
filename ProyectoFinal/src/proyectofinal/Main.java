@@ -1,5 +1,6 @@
-package com.mycompany.evento;
+package proyectofinal;
 
+import proyectofinal.Menus.MenuPrincipal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,6 +12,13 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        
+        MenuPrincipal m = new MenuPrincipal();
+        m.setVisible(true); //mostrar el frame
+        m.setLocationRelativeTo(null); //colocar la ventana en el centro de la pantalla
+        
+        
+        
         // Agregar eventos de prueba
         try {
             Evento evento = new Evento("Fútbol", new SimpleDateFormat("yyyy-MM-dd").parse("2024-08-15"), "Estadio Nacional");
