@@ -99,9 +99,9 @@ public class Main {
             Date fecha = new SimpleDateFormat("yyyy-MM-dd").parse(fechaStr);
             
             // Crear y agregar el partido
-            Partido partido = new Partido(equipo1, equipo2, fecha);
-            evento.programarPartido(partido);
-            System.out.println("Partido programado exitosamente.");
+//            Partido partido = new Partido(equipo1, equipo2, fecha);
+//            evento.programarPartido(partido);
+//            System.out.println("Partido programado exitosamente.");
         } catch (ParseException e) {
             e.printStackTrace();
             System.out.println("Formato de fecha inválido.");
