@@ -1,3 +1,6 @@
+package proyectofinal;
+
+
 public class Participante {
     private String nombre;
     private int edad;

@@ -60,11 +60,11 @@ public class Evento {
         return "Evento: " + nombre + ", Fecha: " + fecha + ", Ubicación: " + ubicacion;
     }
 
-    void mostrarCalendarioPartidos() {
+    public void mostrarCalendarioPartidos() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    void programarPartido(Partido partido) {
+    public void programarPartido(Partido partido) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

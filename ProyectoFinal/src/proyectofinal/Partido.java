@@ -1,3 +1,6 @@
+package proyectofinal;
+
+
 import java.util.Date;
 
 public class Partido {
