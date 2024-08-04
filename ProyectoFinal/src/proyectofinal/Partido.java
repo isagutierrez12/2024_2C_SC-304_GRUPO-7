@@ -63,3 +63,4 @@ public class Partido {
         return "Partido: " + equipo1 + " vs " + equipo2 + ", Fecha: " + fecha;
     }
 }
+
