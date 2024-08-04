@@ -1,9 +1,16 @@
 package proyectofinal;
 
+import java.util.Date;
+
 public class ColaPartidos {
 
     private Partido frente;
     private Partido ultimo;
+
+    public ColaPartidos() {
+        this.frente = null;
+        this.ultimo = null;
+    }
 
     public Partido getFrente() {
         return frente;
@@ -21,6 +28,7 @@ public class ColaPartidos {
         this.ultimo = ultimo;
     }
 
+    // Método para agregar un partido al final de la cola
     public void enCola(Partido d) {
         if (frente == null) {
             frente = d;
@@ -31,24 +39,29 @@ public class ColaPartidos {
         }
     }
 
+    // Método para eliminar un partido del frente de la cola
     public Partido eliminar() {
         Partido aux = frente;
         if (frente != null) {
             frente = frente.getAtras();
+            if (frente == null) {  // Si la cola queda vacía
+                ultimo = null;
+            }
             aux.setAtras(null);
         }
         return aux;
     }
 
+    // Método para mostrar el calendario de partidos para un evento específico
     public String calendarioEvento(Evento evento) {
-        String s = "";
+        StringBuilder sb = new StringBuilder();
         Partido aux = frente;
         while (aux != null) {
-            if (aux.getEvento() == evento) {
-                s += aux + "\n";
+            if (aux.getEvento().equals(evento)) {
+                sb.append(aux).append("\n");
             }
             aux = aux.getAtras();
         }
-        return s;
+        return sb.toString();
     }
 }
