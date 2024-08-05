@@ -2,6 +2,7 @@
 Integrantes:  
 *Isabel Rebeca Gutiérrez Hidalgo  
 *Diego Andrés Ramírez Bolaños  
+*Geylan Salas Chaves
 
 ## Plan de Proyecto para el Sistema de Gestión de Eventos Deportivos 
 1. Definición de proyecto  
