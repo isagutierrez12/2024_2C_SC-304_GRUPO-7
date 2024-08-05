@@ -1,0 +1,33 @@
+private static void cargarDatos() {
+    // Intentamos abrir el archivo de eventos para leer los datos
+    try (BufferedReader reader = new BufferedReader(new FileReader("eventos.txt"))) {
+        String linea;
+        // Leemos el archivo línea por línea
+        while ((linea = reader.readLine()) != null) {
+            // Dividimos cada línea en partes usando el delimitador '|'
+            String[] partes = linea.split("\\|");
+            if (partes.length == 3) {
+                try {
+                    // Extraemos y parseamos los datos del evento
+                    String nombre = partes[0];
+                    Date fecha = new SimpleDateFormat("yyyy-MM-dd").parse(partes[1]);
+                    String ubicacion = partes[2];
+                    
+                    // Creamos un nuevo objeto Evento con los datos leídos
+                    Evento evento = new Evento(nombre, fecha, ubicacion);
+                    // Agregamos el evento a la lista de eventos
+                    listaEventos.agregarEvento(evento);
+                } catch (ParseException e) {
+                    // Manejo de excepciones para el formato de la fecha
+                    JOptionPane.showMessageDialog(null, "Error al parsear la fecha en la línea: " + linea);
+                }
+            } else {
+                // Advertimos si una línea no tiene el formato correcto
+                JOptionPane.showMessageDialog(null, "Formato incorrecto en la línea: " + linea);
+            }
+        }
+    } catch (IOException e) {
+        // Manejo de excepciones para problemas con la lectura del archivo
+        JOptionPane.showMessageDialog(null, "No se pudo leer el archivo de eventos.");
+    }
+}
