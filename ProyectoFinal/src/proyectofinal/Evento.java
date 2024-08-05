@@ -1,6 +1,5 @@
 package proyectofinal;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Evento {
@@ -8,32 +7,71 @@ public class Evento {
     private Date fecha;
     private String ubicacion;
     private NodoParticipante cabezaParticipantes;
-    private NodoParticipante colaParticipantes;
-    private int numParticipantes;
 
+    // Constructor de la clase Evento
     public Evento(String nombre, Date fecha, String ubicacion) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.ubicacion = ubicacion;
-        this.cabezaParticipantes = null;
-        this.colaParticipantes = null;
-        this.numParticipantes = 0;
+        this.cabezaParticipantes = null; // No hay participantes al inicio
     }
 
-    // Métodos para gestionar participantes
-    public void agregarParticipante(Participante p) {
-        NodoParticipante nuevoNodo = new NodoParticipante(p);
+    // Métodos getter y setter para los atributos del evento
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public NodoParticipante getCabezaParticipantes() {
+        return cabezaParticipantes;
+    }
+
+    public void setCabezaParticipantes(NodoParticipante cabezaParticipantes) {
+        this.cabezaParticipantes = cabezaParticipantes;
+    }
+
+    // Método para actualizar los detalles del evento
+    public void actualizarInformacion(String nuevoNombre, Date nuevaFecha, String nuevaUbicacion) {
+        this.nombre = nuevoNombre;
+        this.fecha = nuevaFecha;
+        this.ubicacion = nuevaUbicacion;
+    }
+
+    // Método para añadir un participante al evento
+    public void agregarParticipante(Participante participante) {
+        NodoParticipante nuevoNodo = new NodoParticipante(participante);
         if (cabezaParticipantes == null) {
             cabezaParticipantes = nuevoNodo;
-            colaParticipantes = nuevoNodo;
         } else {
-            colaParticipantes.setSiguiente(nuevoNodo);
-            nuevoNodo.setAnterior(colaParticipantes);
-            colaParticipantes = nuevoNodo;
+            NodoParticipante actual = cabezaParticipantes;
+            while (actual.getSiguiente() != null) {
+                actual = actual.getSiguiente();
+            }
+            actual.setSiguiente(nuevoNodo);
+            nuevoNodo.setAnterior(actual);
         }
-        numParticipantes++;
     }
 
+    // Método para eliminar un participante del evento
     public void eliminarParticipante(String nombreParticipante) {
         NodoParticipante actual = cabezaParticipantes;
         while (actual != null) {
@@ -45,75 +83,15 @@ public class Evento {
                 }
                 if (actual.getSiguiente() != null) {
                     actual.getSiguiente().setAnterior(actual.getAnterior());
-                } else {
-                    colaParticipantes = actual.getAnterior();
                 }
-                numParticipantes--;
                 return;
             }
             actual = actual.getSiguiente();
         }
     }
 
-    public NodoParticipante getCabezaParticipantes() {
-        return cabezaParticipantes;
-    }
-
-    // Métodos para actualizar información del evento
-    public void actualizarInformacion(String nuevoNombre, Date nuevaFecha, String nuevaUbicacion) {
-        this.nombre = nuevoNombre;
-        this.fecha = nuevaFecha;
-        this.ubicacion = nuevaUbicacion;
-    }
-
     @Override
     public String toString() {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        return "Evento: " + nombre + ", Fecha: " + sdf.format(fecha) + ", Ubicación: " + ubicacion;
-    }
-
-    public void mostrarCalendarioPartidos() {
-        // Implementar según sea necesario
-    }
-
-    public void programarPartido(Partido partido) {
-        // Implementar según sea necesario
-    }
-
-    // NodoParticipante como clase interna
-    private class NodoParticipante {
-        private Participante participante;
-        private NodoParticipante siguiente;
-        private NodoParticipante anterior;
-
-        public NodoParticipante(Participante participante) {
-            this.participante = participante;
-            this.siguiente = null;
-            this.anterior = null;
-        }
-
-        public Participante getParticipante() {
-            return participante;
-        }
-
-        public void setParticipante(Participante participante) {
-            this.participante = participante;
-        }
-
-        public NodoParticipante getSiguiente() {
-            return siguiente;
-        }
-
-        public void setSiguiente(NodoParticipante siguiente) {
-            this.siguiente = siguiente;
-        }
-
-        public NodoParticipante getAnterior() {
-            return anterior;
-        }
-
-        public void setAnterior(NodoParticipante anterior) {
-            this.anterior = anterior;
-        }
+        return "Evento: " + nombre + ", Fecha: " + fecha + ", Ubicación: " + ubicacion;
     }
 }
