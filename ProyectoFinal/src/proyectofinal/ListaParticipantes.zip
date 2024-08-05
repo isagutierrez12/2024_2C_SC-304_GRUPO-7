@@ -1,0 +1,57 @@
+public class ListaParticipantes {
+    private NodoParticipante cabezaParticipantes;
+
+    public ListaParticipantes() {
+        this.cabezaParticipantes = null;
+    }
+
+    public void agregarParticipante(Participante participante) {
+        NodoParticipante nuevoNodo = new NodoParticipante(participante);
+        if (cabezaParticipantes == null) {
+            cabezaParticipantes = nuevoNodo;
+        } else {
+            NodoParticipante actual = cabezaParticipantes;
+            while (actual.getSiguiente() != null) {
+                actual = actual.getSiguiente();
+            }
+            actual.setSiguiente(nuevoNodo);
+            nuevoNodo.setAnterior(actual);
+        }
+    }
+
+    public boolean eliminarParticipante(String nombre) {
+        NodoParticipante actual = cabezaParticipantes;
+        while (actual != null) {
+            if (actual.getParticipante().getNombre().equals(nombre)) {
+                if (actual.getAnterior() != null) {
+                    actual.getAnterior().setSiguiente(actual.getSiguiente());
+                } else {
+                    cabezaParticipantes = actual.getSiguiente();
+                }
+                if (actual.getSiguiente() != null) {
+                    actual.getSiguiente().setAnterior(actual.getAnterior());
+                }
+                return true;
+            }
+            actual = actual.getSiguiente();
+        }
+        return false;
+    }
+
+    public String mostrarParticipantes() {
+        StringBuilder sb = new StringBuilder();
+        NodoParticipante actual = cabezaParticipantes;
+        while (actual != null) {
+            Participante participante = actual.getParticipante();
+            sb.append(participante.getNombre()).append(" | ")
+              .append(participante.getEdad()).append(" | ")
+              .append(participante.getEquipo()).append("\n");
+            actual = actual.getSiguiente();
+        }
+        return sb.toString();
+    }
+
+    public NodoParticipante getCabezaParticipantes() {
+        return cabezaParticipantes;
+    }
+}
