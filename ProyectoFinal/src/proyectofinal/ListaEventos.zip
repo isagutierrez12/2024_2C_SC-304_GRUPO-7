@@ -1,0 +1,66 @@
+public class ListaEventos {
+    private NodoEvento cabezaEventos;
+
+    public ListaEventos() {
+        this.cabezaEventos = null;
+    }
+
+    public void agregarEvento(Evento evento) {
+        NodoEvento nuevoNodo = new NodoEvento(evento);
+        if (cabezaEventos == null) {
+            cabezaEventos = nuevoNodo;
+        } else {
+            NodoEvento actual = cabezaEventos;
+            while (actual.getSiguiente() != null) {
+                actual = actual.getSiguiente();
+            }
+            actual.setSiguiente(nuevoNodo);
+        }
+    }
+
+    public Evento buscarEvento(String nombre) {
+        NodoEvento actual = cabezaEventos;
+        while (actual != null) {
+            if (actual.getEvento().getNombre().equals(nombre)) {
+                return actual.getEvento();
+            }
+            actual = actual.getSiguiente();
+        }
+        return null;
+    }
+
+    public boolean eliminarEvento(String nombre) {
+        NodoEvento actual = cabezaEventos;
+        NodoEvento previo = null;
+        while (actual != null) {
+            if (actual.getEvento().getNombre().equals(nombre)) {
+                if (previo != null) {
+                    previo.setSiguiente(actual.getSiguiente());
+                } else {
+                    cabezaEventos = actual.getSiguiente();
+                }
+                return true;
+            }
+            previo = actual;
+            actual = actual.getSiguiente();
+        }
+        return false;
+    }
+
+    public String mostrarEventos() {
+        StringBuilder sb = new StringBuilder();
+        NodoEvento actual = cabezaEventos;
+        while (actual != null) {
+            Evento evento = actual.getEvento();
+            sb.append(evento.getNombre()).append(" | ")
+              .append(new SimpleDateFormat("yyyy-MM-dd").format(evento.getFecha())).append(" | ")
+              .append(evento.getUbicacion()).append("\n");
+            actual = actual.getSiguiente();
+        }
+        return sb.toString();
+    }
+
+    public NodoEvento getCabezaEventos() {
+        return cabezaEventos;
+    }
+}
