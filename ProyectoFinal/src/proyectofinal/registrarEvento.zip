@@ -1,0 +1,14 @@
+private static void registrarEvento() {
+    try {
+        String nombre = JOptionPane.showInputDialog("Nombre del Evento:");
+        String fechaStr = JOptionPane.showInputDialog("Fecha del Evento (yyyy-MM-dd):");
+        Date fecha = new SimpleDateFormat("yyyy-MM-dd").parse(fechaStr);
+        String ubicacion = JOptionPane.showInputDialog("Ubicación del Evento:");
+
+        Evento evento = new Evento(nombre, fecha, ubicacion);
+        listaEventos.agregarEvento(evento);
+        JOptionPane.showMessageDialog(null, "Evento registrado exitosamente.");
+    } catch (ParseException e) {
+        JOptionPane.showMessageDialog(null, "Formato de fecha inválido.");
+    }
+}
