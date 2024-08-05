@@ -1,0 +1,27 @@
+private static void actualizarEvento() {
+    // Pedimos al usuario el nombre del evento que desea actualizar
+    String nombreEvento = JOptionPane.showInputDialog("Ingrese el nombre del evento que desea actualizar:");
+
+    // Buscamos el evento en la lista utilizando el nombre proporcionado
+    Evento evento = listaEventos.buscarEvento(nombreEvento);
+    
+    if (evento != null) {
+        try {
+            // Solicitamos al usuario los nuevos detalles del evento
+            String nuevoNombre = JOptionPane.showInputDialog("Ingrese el nuevo nombre del evento:", evento.getNombre());
+            String nuevaFechaStr = JOptionPane.showInputDialog("Ingrese la nueva fecha del evento (yyyy-MM-dd):", new SimpleDateFormat("yyyy-MM-dd").format(evento.getFecha()));
+            Date nuevaFecha = new SimpleDateFormat("yyyy-MM-dd").parse(nuevaFechaStr);
+            String nuevaUbicacion = JOptionPane.showInputDialog("Ingrese la nueva ubicación del evento:", evento.getUbicacion());
+
+            // Actualizamos la información del evento con los nuevos datos
+            evento.actualizarInformacion(nuevoNombre, nuevaFecha, nuevaUbicacion);
+            JOptionPane.showMessageDialog(null, "El evento se actualizó exitosamente.");
+        } catch (ParseException e) {
+            // Manejamos el caso en que el formato de la fecha no es válido
+            JOptionPane.showMessageDialog(null, "El formato de la fecha no es válido. Por favor, use el formato yyyy-MM-dd.");
+        }
+    } else {
+        // Notificamos al usuario si el evento no se encuentra en la lista
+        JOptionPane.showMessageDialog(null, "No se encontró el evento con el nombre proporcionado.");
+    }
+}
